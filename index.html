@@ -1,0 +1,73 @@
+<!--
+File: index.html
+GUI Assignment: HW5 Implementing a Bit of Scrabble with Drag-and-Drop
+Paul Warwick, UMass Lowell Computer Science, paul_warwick@student.uml.edu
+Copyright (c) 2024 by Paul Warwick. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by PW on 6/27/2024 at 10:57 pm.
+
+Description: HTML file for the scrabble game. Styled by style.css, made dynamic by scrabble.js
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Scrabble</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS plugins -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scrabble Title -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="name">
+                    <span class="title">SCRABBLE</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- One line game board -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="center_text_images">
+                    <img class="resize_board" id="the_board" src="graphics_data/Scrabble_Board_OneLine.png">
+                    <div id="board"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scoring section -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="scoreboard">Word: <span id="word">____</span> </div>
+                <div class="scoreboard">Score: <span id="score">0</span> </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <br><br>
+
+        <!-- Scrabble rack + pieces -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="center_text_images">
+                    <img class="resize_rack" id="the_rack" src="graphics_data/scrabble-tile-holder-406774_640.png">
+                    <div id="rack"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="scrabble.js"></script>
+</body>
+</html>

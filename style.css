@@ -1,0 +1,87 @@
+/*
+File: scrabble.js
+GUI Assignment: HW5 Implementing a Bit of Scrabble with Drag-and-Drop
+Paul Warwick, UMass Lowell Computer Science, paul_warwick@student.uml.edu
+Copyright (c) 2024 by Paul Warwick. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by PW on 6/27/2024 at 10:57 pm.
+
+Description: JavaScript file to manipulate html and css and make dynamic additions to the scrabble game.
+*/
+
+/* Style the body */
+body {
+  /* Background image Ref: https://www.pexels.com/photo/gray-rock-mountain-547115/ */
+  background-color: #000000;
+  background-image: url('../images/mountains.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Style html */
+html {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+/* Style center image text */
+.center_text_images {
+  margin: auto;
+  text-align: center;
+}
+
+/* Style resizing of the board */
+.resize_board {
+  height: 125px;
+  width: auto;
+}
+
+/* Style resizing of the rack */
+.resize_rack {
+  height: 125px;
+  width: 1200px;
+}
+
+/* Style pieces */
+.pieces {
+  height: 100px;
+  width: 100px;
+}
+
+/* Style the droppable object */
+.droppable {
+  height: 125px;
+  width: 120px;
+}
+
+
+/* Style title */
+.title {
+  background-color: #d190c8;    
+  color: #000000;               
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* style main header text */
+h1.name {
+  font-size: 750%;
+  text-align: center;
+}
+
+.scoreboard {
+  background-color: #d190c8; 
+  color: rgb(0, 0, 0);
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 200%;
+  font-weight: 900;
+  text-align: center;
+}
