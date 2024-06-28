@@ -13,7 +13,7 @@ Description: JavaScript file to manipulate html and css and make dynamic additio
 body {
   /* Background image Ref: https://www.pexels.com/photo/gray-rock-mountain-547115/ */
   background-color: #000000;
-  background-image: url('images/mountains.jpg');
+  background-image: url('/images/mountains.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
