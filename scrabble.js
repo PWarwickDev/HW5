@@ -23,7 +23,7 @@ function findWord() {
     for (var i = 0; i < 15; i++) {
         if (gameBoard[i].tile != "empty") {
             word += findLetter(gameBoard[i].tile);
-            score += find_score(gameBoard[i].tile);
+            score += findScore(gameBoard[i].tile);
         }
     }
 
@@ -56,7 +56,7 @@ function checkDouble() {
 }
 
 // Takes a letter and returns a score
-function find_score(given_id) {
+function findScore(given_id) {
 
     // get letter
     var letter = findLetter(given_id);
